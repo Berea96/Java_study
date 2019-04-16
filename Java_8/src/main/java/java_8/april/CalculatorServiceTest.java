@@ -7,33 +7,33 @@ public class CalculatorServiceTest {
 
     @Test
     public void calculateAddition() {
-        CalculatorService calculatorService = new CalculatorService();
+        Calculation calculation = new Addition();
 
-        final int actual = calculatorService.calculate('+', 1, 1);
+        final int actual = calculation.calculate(1, 1);
 
         Assertions.assertEquals(actual, 2);
     }
     @Test
     public void calculateSubtraction() {
-        CalculatorService calculatorService = new CalculatorService();
+        Calculation calculation = new Subtraction();
 
-        final int actual = calculatorService.calculate('-', 1, 1);
+        final int actual = calculation.calculate(1, 1);
 
         Assertions.assertEquals(actual, 0);
     }
     @Test
     public void calculateMultipication() {
-        CalculatorService calculatorService = new CalculatorService();
+        Calculation calculation = new Multiplication();
 
-        final int actual = calculatorService.calculate('*', 3, 1);
+        final int actual = calculation.calculate(3, 1);
 
         Assertions.assertEquals(actual, 3);
     }
     @Test
     public void calculateDivision() {
-        CalculatorService calculatorService = new CalculatorService();
+        Calculation calculation = new Division();
 
-        final int actual = calculatorService.calculate('/', 1, 0);
+        final int actual = calculation.calculate(1, 0);
 
         Assertions.assertEquals(actual, 1);
     }
