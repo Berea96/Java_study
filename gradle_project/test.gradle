@@ -1,0 +1,23 @@
+String name = 'Berea Kim'
+
+String having_brace_title = "Project: ${project.name}"
+
+String none_brace_title = "Project_name : $project.name"
+
+String single_quotation_multi_line = '''this is first line
+Hello this line is second
+wow this line is third'''
+
+String double_quotation_multi_line = """this double quotation
+second line
+third line"""
+
+def print_nickname = {nickname -> println "hi, my nickname is $nickname"}
+def print_title = {title -> println "this project name is $title"}
+def print_quotation_multi_line = {message -> println "$message"}
+
+task print {
+    print_nickname name
+    print_title having_brace_title
+    print_quotation_multi_line single_quotation_multi_line
+}
