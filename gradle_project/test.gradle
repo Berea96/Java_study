@@ -16,6 +16,8 @@ def print_nickname = {nickname -> println "hi, my nickname is $nickname"}
 def print_title = {title -> println "this project name is $title"}
 def print_quotation_multi_line = {message -> println "$message"}
 
+//def test_closer = {x -> return y -> {x + y}}
+//def test_closer_2 = test_closer 2
 task print {
     print_nickname name
     print_title having_brace_title
@@ -29,4 +31,8 @@ task printLoop {
         if (i > 4) break
         i++
     }
+}
+
+task test_closer {
+//    test_closer_2 5
 }
