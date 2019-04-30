@@ -21,3 +21,12 @@ task print {
     print_title having_brace_title
     print_quotation_multi_line single_quotation_multi_line
 }
+
+task printLoop {
+    int i = 0
+    while (true) {
+        println "loop count : $i"
+        if (i > 4) break
+        i++
+    }
+}
