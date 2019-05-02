@@ -1,0 +1,6 @@
+//
+
+def server_port = 22
+
+def host_name = kali_linux
+
